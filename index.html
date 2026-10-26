@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Developer Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: #1e293b;
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav {
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      margin-bottom: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #0284c7;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #38bdf8;
+      margin-bottom: 16px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skills span {
+      background: #1e293b;
+      padding: 10px 16px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      background: #1e293b;
+      color: #cbd5e1;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h2>Hello, I'm <span id="name">Your Name</span></h2>
+      <p>A beginner web developer learning to build amazing websites.</p>
+      <a class="button" href="#about">Discover My Journey</a>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm learning web development and building projects
+        with HTML, CSS and JavaScript. This portfolio is
+        the beginning of my journey as a developer.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Responsive Design</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can connect with me through my GitHub profile.</p>
+      <p>
+        <a class="button"
+           href="https://github.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Visit GitHub
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Developer Portfolio</p>
+    <p>Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script>
+    const nameElement = document.getElementById("name");
+
+    nameElement.addEventListener("click", function () {
+      nameElement.textContent =
+        nameElement.textContent === "Your Name"
+          ? "Future Developer"
+          : "Your Name";
+    });
+  </script>
+</body>
+</html>
